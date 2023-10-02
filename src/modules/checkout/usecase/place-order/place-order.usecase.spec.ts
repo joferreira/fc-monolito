@@ -201,7 +201,7 @@ describe("PlaceOrderUseCase unit test", () => {
                 null,
                 null,
                 mockCheckoutRepo as any,
-                mockInvoiceFacade,
+                mockInvoiceFacade as any,
                 mockPaymentFacade
             );
 
