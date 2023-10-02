@@ -1,4 +1,4 @@
-import UseCaseInterface from "../../@shared/domain/usecase/use-case.interface";
+import UseCaseInterface from "../../@shared/usecase/use-case.interface";
 import ClientAdmFacadeInterface, { AddClientFacadeInputDto, FindClientFacadeInputDto, FindClientFacadeOutputDto } from "./client-adm.facade.interface";
 
 export interface UseCaseProps {

@@ -1,5 +1,4 @@
 import Id from "../../@shared/domain/entity/value-object/id.value-object";
-import Client from "../domain/client.entity";
 import clientEntity from "../domain/client.entity";
 import ClientGateway from "../gateway/client.gateway";
 import { ClientModel } from "./client.model";
@@ -10,9 +9,15 @@ export default class ClientRepository implements ClientGateway {
       id: client.id.id,
       name: client.name,
       email: client.email,
-      address: client.address,
+      document: client.document,
+      street: client.street,
+      number: client.number,
+      complement: client.complement,
+      state: client.state,
+      city: client.city,
+      zipcode: client.zipcode,
       createdAt: client.createdAt,
-      updatedAt: client.updatedAt,
+      updatedAt: client.updatedAt
     });
   }
   async find(id: string): Promise<clientEntity> {
@@ -22,11 +27,17 @@ export default class ClientRepository implements ClientGateway {
       throw new Error("Client not found");
     }
 
-    return new Client({
+    return new clientEntity({
       id: new Id(client.id),
       name: client.name,
       email: client.email,
-      address: client.address,
+      document: client.document,
+      street: client.street,
+      number: client.number,
+      complement: client.complement,
+      state: client.state,
+      city: client.city,
+      zipcode: client.zipcode,
       createdAt: client.createdAt,
       updatedAt: client.updatedAt,
     });
