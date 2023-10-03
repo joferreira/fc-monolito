@@ -20,7 +20,7 @@ export default class Invoice extends BaseEntity {
     private _items: Product[];
 
     constructor (props: InvoiceProps){
-        super(props.id);
+        super(props.id, props.createdAt, props.updatedAt);
         this._name = props.name;
         this._document = props.document;
         this._address = props.address;

@@ -30,25 +30,25 @@ describe("InvoiceRepository test", () => {
       const repository = new InvoiceRepository();
       const invoice = new Invoice({
         id: new Id("1"),
-        name: "Teste",
+        name: "Test",
         document: "12345678901",
         address: new Address({
-          street: "Rua Teste",
+          street: "Rua Test",
           number: "123",
-          complement: "complemento",
-          city: "Teste",
-          state: "Teste",
+          complement: "complement",
+          city: "Test",
+          state: "Test",
           zipCode: "12345678",
         }),
         items: [
           new Product({
             id: new Id("1"),
-            name: "Teste",
+            name: "Test",
             price: 10,
           }),
           new Product({
             id: new Id("2"),
-            name: "Teste 2",
+            name: "Test 2",
             price: 20,
           }),
         ],
@@ -83,25 +83,25 @@ describe("InvoiceRepository test", () => {
       const repository = new InvoiceRepository();
       const invoice = new Invoice({
         id: new Id("1"),
-        name: "Teste",
+        name: "Test",
         document: "12345678901",
         address: new Address({
-          street: "Rua Teste",
+          street: "Rua Test",
           number: "123",
-          complement: "complemento",
-          city: "Teste",
-          state: "Teste",
+          complement: "complement",
+          city: "Test",
+          state: "Test",
           zipCode: "12345678",
         }),
         items: [
           new Product({
             id: new Id("1"),
-            name: "Teste",
+            name: "Test",
             price: 10,
           }),
           new Product({
             id: new Id("2"),
-            name: "Teste 2",
+            name: "Test 2",
             price: 20,
           }),
         ],
